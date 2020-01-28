@@ -1,4 +1,4 @@
-I = imread('C:\Users\Marwan\Desktop\Reconnaissance de visages\TestDatabase\8.jpg');
+I = imread('C:\Users\Marwan\Desktop\Facial-Recognition\TestDatabase\8.jpg');
 imSz = size(I);
 patchSz = [64 64];
 xIdxs = [1:patchSz(2):imSz(2) imSz(2)+1];

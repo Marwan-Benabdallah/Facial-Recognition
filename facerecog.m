@@ -1,4 +1,4 @@
-ImageDatabasePath ='C:\Users\Marwan\Desktop\Reconnaissance de visages\test';
+ImageDatabasePath ='C:\Users\Marwan\Desktop\Facial-Recognition\test';
 ImageFiles = dir(ImageDatabasePath);
 Train_Number = 0;
 Image_Number = 0;

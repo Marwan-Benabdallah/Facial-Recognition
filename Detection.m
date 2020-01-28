@@ -17,8 +17,8 @@ handles.N=N;
 counter=1;
 for i=1:N
     face=imcrop(img,BB(i,:));
-    savenam = strcat('C:\Users\Marwan\Desktop\Reconnaissance de visages' ,num2str(counter), '.jpg'); %Image sauvegardée à cet emplacement
-    baseDir  = 'C:\Users\Marwan\Desktop\Reconnaissance de visages\TestDatabase\';
+    savenam = strcat('C:\Users\Marwan\Desktop\Facial-Recognition' ,num2str(counter), '.jpg'); %Image sauvegardée à cet emplacement
+    baseDir  = 'C:\Users\Marwan\Desktop\Facial-Recognition\TestDatabase\';
     newName  = [baseDir num2str(counter) '.jpg'];
     handles.face=face;
     while exist(newName,'file')
