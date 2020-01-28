@@ -1,0 +1,14 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+    background-color: #87CEFA;
+}

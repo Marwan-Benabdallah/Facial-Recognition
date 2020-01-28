@@ -4,18 +4,24 @@
     <title>Facial Recognition</title>
   </head>
   <body>
-      <h1><center>Facial Recognition</center></h1>
-  My project is about Face Recognition. I decided to implement it with the Matlab programming language, with the Matlab IDE. For the detection of faces in an image, I relied on Viola and Jones' face detector. For recognition, I adopted the Local Approach rather than the Global Approach. Indeed, I made this choice by having tested a start for both, having hesitated a lot between these two methods, especially by having learned about these methods during the work requested earlier in the semester (state of the art and oral presentation of an article). The Local Approach is therefore as follows: The method consists in splitting the face images into patches, extracting the specific features (2 methods for extracting features: Viola and Jones' method, and LBP) for each patch, possibly selecting the most discriminating features, and finally a classification step to recognize the presented face as input (via a SVM, and a Fisher's Discriminant Linear Analysis). Then, I compared (in terms of recognition rate and recognition time) the obtained results  with the obtained features by the LBPs, with those obtained with the Viola and Jones features. Finally, I also compared the obtained results with the two proposed classification methods.
+      <link href="main.css" rel="stylesheet">
+      <h1 style="font-size:60px;"><center>Facial Recognition</center></h1>
+  <p>My project is about Face Recognition. I decided to implement it with the Matlab programming language, with the Matlab IDE. For the detection of faces in an image, I relied on Viola and Jones' face detector. For recognition, I adopted the Local Approach rather than the Global Approach. Indeed, I made this choice by having tested a start for both, having hesitated a lot between these two methods, especially by having learned about these methods during the work requested earlier in the semester (state of the art and oral presentation of an article). The Local Approach is therefore as follows: The method consists in splitting the face images into patches, extracting the specific features (2 methods for extracting features: Viola and Jones' method, and LBP) for each patch, possibly selecting the most discriminating features, and finally a classification step to recognize the presented face as input. I used the SVM classifier. Then, I compared (in terms of recognition rate and recognition time) the obtained results  with the obtained features by the LBPs, with those obtained with the Viola and Jones features.
+  <br>In this project, some learning databases were proposed : 
+      <ul><li><a href="https://cswww.essex.ac.uk/mv/allfaces/">https://cswww.essex.ac.uk/mv/allfaces/</a></li>
+      <li><a href="http://vis-www.cs.umass.edu/lfw/">http://vis-www.cs.umass.edu/lfw/</a></li></ul>
+  I used <a href="https://cswww.essex.ac.uk/mv/allfaces/">https://cswww.essex.ac.uk/mv/allfaces/</a> learning database, to train the SVM classifier. 
+      I got very good model accuracies, for both kind of features (see <a href="#res">Obtained results with SVM classifier</a>). As we can see in <a href="#res">Obtained results with SVM classifier</a>, the SVM classifier with LBP features is much faster than the SVM classifier with Viola and Jones features.<br> Here are now some results I got along this project</p>
       
-      <h2>Detected faces with Viola and Jones' face detector</h2>
-      <img src="endetect.jpg">
-      <h2>Patch splitted image</h2>
-      <img src="blocks.PNG">
-      <h2>Extracted features with Viola and Jones method</h2>
-      <img src="det.PNG">
-      <h2>Extracted features (and histograms) with LBP method</h2>
-      <img src="Capture.PNG">
-      <h2>Results obtained with SVM classifier</h2>
-      <img src="res.PNG">
+      <h2><center>Detected faces with Viola and Jones' face detector</center></h2>
+      <img src="endetect.jpg" class="center">
+      <h2><center>Patch splitted image</center></h2>
+      <img src="blocks.PNG" class="center">
+      <h2><center>Extracted features with Viola and Jones method</center></h2>
+      <img src="det.PNG" class="center">
+      <h2><center>Extracted features (and histograms) with LBP method</center></h2>
+      <img src="Capture.PNG" class="center">
+      <h2 id="res"><center>Obtained results with SVM classifier</center></h2>
+      <img src="res.PNG" class="center">
   </body>
 </html>
