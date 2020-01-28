@@ -1,5 +1,8 @@
 load fisheriris
-inds = ~strcmp(species,'setosa');
-X = meas(inds,3:4);
-y = species(inds);
-SVMModel = fitcsvm(X,y)
+MdlLinear = fitcdiscr(meas,species);
+meanmeas = mean(meas);
+meanclass = predict(MdlLinear,meanmeas)
+MdlQuadratic = fitcdiscr(meas,species,'DiscrimType','quadratic');
+meanclass2 = predict(MdlQuadratic,meanmeas)
+
+accuracy = sum((predictedLabels == testLabels))/length(testLabels)*100;

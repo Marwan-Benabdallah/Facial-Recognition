@@ -23,10 +23,10 @@ end
 grayImage = imread(fullFileName);
 % Get the dimensions of the image.  numberOfColorBands should be = 1.
 [rows columns numberOfColorBands] = size(grayImage);
-% Display the original gray scale image.
+% Display the original color image.
 subplot(2, 2, 1);
 imshow(grayImage, []);
-title('Original Grayscale Image', 'FontSize', fontSize);
+title('Original Color Image', 'FontSize', fontSize);
 % Enlarge figure to full screen.
 set(gcf, 'Position', get(0,'Screensize')); 
 set(gcf,'name','Image Analysis Demo','numbertitle','off') 
