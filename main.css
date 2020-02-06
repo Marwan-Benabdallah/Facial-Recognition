@@ -7,8 +7,10 @@
 
 p {
   text-align: justify;
+  line-height: 25px;
 }
 
 h1 {
     background-color: #87CEFA;
 }
+
